@@ -204,7 +204,7 @@ while (isNaN(coor)) {
         console.log(space);
     }
 
-    if (x == 5 && y == -4) {
+    if (x == 5 && y == -4 || x == 4 && y == -4) {
         console.log(space);
         console.log(line);
         console.log(space);
@@ -591,6 +591,17 @@ while (isNaN(coor)) {
         console.log(space);
     }
 
+    if (x == -1 && y == -3) {
+        console.log(space);
+        console.log(line);
+        console.log(space);
+        console.log('You cannot continue in this direction');
+        console.log(space);
+        console.log(line);
+        console.log(space);
+        y = -2
+    }
+
     if (x == -2 && y == -1 || x == -2 && y == -2) {
         console.log(space);
         console.log(line);
@@ -599,6 +610,17 @@ while (isNaN(coor)) {
         console.log(space);
         console.log(line);
         console.log(space);
+    }
+
+    if (x == -2 && y == -3) {
+        console.log(space);
+        console.log(line);
+        console.log(space);
+        console.log('You cannot continue in this direction');
+        console.log(space);
+        console.log(line);
+        console.log(space);
+        y = -2
     }
 
     if (x == -3 && y == -1 || x == -3 && y == -2) {
@@ -813,5 +835,5 @@ while (isNaN(coor)) {
     coor = prompt(`Your coordinates are (${x},${y}). Would you like to go "up", "right", "down", or "left" `);
 }
 
-// right = 
+// right = 'right'
 
